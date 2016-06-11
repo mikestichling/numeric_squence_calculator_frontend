@@ -1,7 +1,6 @@
 # Numeric-sequence-calculator-frontend
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is a way to calculate the numeric sequences from 0 to a number specified by the user. 
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/mikestichling/numeric_squence_calculator_frontend.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -25,9 +24,6 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -41,7 +37,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+To deploy the application you will need to build it 
+
+`ember build --environment=production`
+
+Copy over the sit folder into the backend repository. 
+
+`https://github.com/mikestichling/numeric_squence_calculator`
+
+ and update the project file to include the latest files. Push the changes and wait for Azure to deploy the latest package.
 
 ## Further Reading / Useful Links
 
