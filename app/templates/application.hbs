@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="container">
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-heading">Numeric Sequence Calculator</div>
+      <div class="panel-body">
 
-{{outlet}}
+              {{bs-form-element controlType="number" label="Enter a number" placeholder="number" value=unknown}}
+
+              {{bs-button defaultText="Process" type="primary" buttonType="submit"}}
+      </div>
+    </div>
+    {{outlet}}
+  </div>
+</div>
