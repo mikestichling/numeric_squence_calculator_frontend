@@ -41,7 +41,7 @@ To deploy the application you will need to build it
 
 `ember build --environment=production`
 
-Copy over the sit folder into the backend repository. 
+Copy over dist folder into the Webapi project on the backend repository. 
 
 `https://github.com/mikestichling/numeric_squence_calculator`
 
