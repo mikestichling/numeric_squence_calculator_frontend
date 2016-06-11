@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Numeric Sequence Calculator</div>
+  <div class="panel-body">
+
+          {{bs-form-element controlType="number" label="Enter a number" placeholder="number" value=number}}
+
+          {{bs-button defaultText="Process" type="primary" buttonType="submit" action=(action "process")}}
+  </div>
+</div>
+
+{{#if hasError}}
+<div class="alert alert-danger" role="alert">{{errorMessage}}</div>
+{{/if}}
+
+{{#each model as |item|}}
+<h5>{{item.ProcessorName}}</h5>
+
+<p>
+  {{#each item.Numbers as |number|}}
+    {{number.DisplayValue}},
+  {{/each}}
+</p>
+{{/each}}
