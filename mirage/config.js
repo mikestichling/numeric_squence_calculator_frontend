@@ -1,6 +1,6 @@
 export default function() {
 
-  this.post('/api/NumberSequence/:number', function() {
+  this.get('/api/NumberSequence/:number', function() {
     return [
   {
     "Numbers": [{"Value": 0,"DisplayValue": "0"

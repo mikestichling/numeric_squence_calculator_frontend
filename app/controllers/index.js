@@ -14,9 +14,10 @@ export default Ember.Controller.extend({
       }
       else {
         var url = '/api/NumberSequence/'+number;
-        this.get('ajax').post(url, {
+        this.get('ajax').request(url, {
         }).then(function(value) {
           that.set('model', value);
+          that.set('errorMessage', null);
           }, function(reason) {
             that.set('errorMessge', 'Request Failed: ' + reason);
           });
