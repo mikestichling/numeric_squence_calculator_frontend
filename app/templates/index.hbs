@@ -12,12 +12,14 @@
 <div class="alert alert-danger" role="alert">{{errorMessage}}</div>
 {{/if}}
 
-{{#each model as |item|}}
-<h4>{{item.ProcessorName}}</h4>
+<div class="results">
+  {{#each model as |item|}}
+  <h4>{{item.ProcessorName}}</h4>
 
-<p>
-  {{#each item.Numbers as |number|}}
-    {{number.DisplayValue}},
+  <p>
+    {{#each item.Numbers as |number|}}
+      {{number.DisplayValue}},
+    {{/each}}
+  </p>
   {{/each}}
-</p>
-{{/each}}
+</div>
