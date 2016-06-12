@@ -24,11 +24,12 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
+All API interactions are currently mocked out with Mirage when running in a development environment.
+
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+* `ember test --server` for automated UI Tests
 
 ### Building
 
